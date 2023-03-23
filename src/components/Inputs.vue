@@ -17,7 +17,7 @@ const handleChange = (e: any) => {
 </script>
 <template>
   <div id="container">
-    <label for="task_name">Task</label>
+    <label for="input_container">Task</label>
     <input id="input_container" @input="handleChange" type="text" />
     <Tasks />
   </div>

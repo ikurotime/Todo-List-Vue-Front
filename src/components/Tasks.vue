@@ -18,7 +18,7 @@ onMounted(() => {
   refetch()
 })
 const handleDelete = (taskId: string) => {
-  fetch('http://localhost:8000/delete/' + store.username, {
+  fetch(import.meta.env.VITE_BACKEND_URL + '/delete/' + store.username, {
     method: 'DELETE',
     body: JSON.stringify({
       taskId: taskId
@@ -31,7 +31,7 @@ const handleDelete = (taskId: string) => {
 const handleSubmit = () => {
   const task = store.task
 
-  fetch('http://localhost:8000/post/' + user, {
+  fetch(import.meta.env.VITE_BACKEND_URL + '/post/' + user, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
