@@ -89,4 +89,7 @@ li {
   gap: 10px;
   background-color: #313131;
 }
+button {
+  cursor: pointer;
+}
 </style>
